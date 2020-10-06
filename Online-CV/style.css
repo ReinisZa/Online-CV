@@ -8,11 +8,18 @@ body{
 .header{
     border-bottom: solid 5px;
     padding: 10px;
-    margin: 0 150px 0 150px;
+    margin: 50px 500px 0px 500px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    border-color: rgba(166, 234, 255, 0.781);
+    border-color: rgba(95, 212, 248, 0.781);
     text-align: center;
+}
+@media only screen and (max-width: 1275px){
+    .header{
+        border-bottom: none;
+        text-align: left;
+        margin: 50px;
+    }
 }
 a{
     color: rgb(0, 0, 0);
@@ -20,7 +27,7 @@ a{
 h1{
     font-family: "CustomFont", sans-serif;
     display: inline-block;
-    margin: 0 40px 0 30px;
+    margin: 0 5px 0 40px;
     color: rgb(255, 255, 255);
 }
 h2{
@@ -35,6 +42,11 @@ h2{
     url("squareo-webfont.otf") format("opentype"),*/
     url("squareo-webfont.svg#filename") format("svg");
 }
+@font-face{
+    font-family: "CustomFont2";
+    src: url("melbourne_reg-webfont.eot"),
+    url("melbourne_reg-webfont.svg#filename") format("svg");
+}
 .main-body{
     /*display: grid;
     grid-template-columns: 30% 70%;
@@ -44,21 +56,45 @@ h2{
     margin: 20px 100px 20px 100px;
     padding: 10px;
 }
+.image-div{
+    width: 0;
+    height: 0;
+}
+@media only screen and (max-width: 1000px){
+    .image-div{
+        width: 100%;
+        height: 100%;
+    }
+}
 .profile-image{
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     /*grid-column: 1 / 2;*/
-    display: inline-block ;
+    display: inline-flex ;
+    margin: 150px 0 0 0;
+}
+.body{
+    margin: 0 0 0 450px;
+}
+@media only screen and (max-width: 1000px){
+    .body{
+        margin: 0;
+    }
+    .profile-image{
+        margin: 50px 0 0 0;
+    }
 }
 .title-about1{
+    font-family: Noto Sans, sans-serif;
     display: inline-flex;
     justify-self: flex-start;
     font-size: 72px;
-    margin: 0;
+    margin: 30px 0 30px 0;
     /*grid-column: 2;
     grid-row: 1;*/
 }
 .title-about2{
+    font-family: Verdana, Geneva, Tahoma, monospace;
     display: inline-flex;
     justify-self: flex-start;
     /*grid-column: 2;
@@ -66,7 +102,38 @@ h2{
     margin: 0;
 }
 .body-text{
+    font-family: Verdana, Geneva, Tahoma, monospace;
     display: inline-flex;
+    font-size: 26px;
     /*grid-column: 2;
     grid-row: 3;*/
+}
+
+footer{
+    background-image: linear-gradient(to top, rgb(51, 197, 255),rgba(255, 255, 255, 0));
+    width: 100%;
+    border-top: 3px solid;
+    border-color: rgba(95, 212, 248, 0.781);
+    padding: 20px;
+}
+.links{
+    margin: 20px 0 0 100px;
+    width: 100px;
+}
+.links :nth-child(n){
+    margin: 10px 0 0 0;
+}
+.facebook{
+    display: inline-flex;
+    height: 36px;
+    width: 36px;
+}
+.instagram{
+    display: inline-flex;
+    height: 36px;
+    width: 36px;
+}
+#soc-names{
+    display: inline-flex;
+    margin: 0 0 0 50px;
 }
