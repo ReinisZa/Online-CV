@@ -38,6 +38,7 @@ h2{
 li{
     font-family: "CustomFont", sans-serif;
     font-weight: 800;
+    font-size: 32px;
 }
 @font-face{
     font-family: "CustomFont";
@@ -108,7 +109,7 @@ li{
     margin: 0;
 }
 .body-text{
-    font-family: Verdana, Geneva, Tahoma, monospace;
+    font-family: "CustomFont", sans-serif;
     display: inline-flex;
     font-size: 26px;
     /*grid-column: 2;
@@ -144,22 +145,26 @@ div.gallery {
     float: left;
     width: 350px;
     height: 350px;
-  }
+}
   
   div.gallery:hover {
     border: 1px solid #777;
-  }
+}
   
   div.gallery img {
     width: 100%;
     height: 230px;
-  }
+}
   
   div.desc {
     padding: 15px;
     text-align: center;
-  }
+}
   .gallery-image{
       height: auto;
       width: auto;
-  }
+}
+.experience{
+    font-size: 24px;
+    font-family: "CustomFont", sans-serif;
+}
