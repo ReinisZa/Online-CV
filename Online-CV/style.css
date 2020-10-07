@@ -3,12 +3,12 @@ body{
     margin: 0;
     background-image: linear-gradient(rgb(51, 197, 255),rgba(255, 255, 255, 0));
     background-repeat: no-repeat;
-    height: 200px;
+    height: 150px;
 }
 .header{
     border-bottom: solid 5px;
     padding: 10px;
-    margin: 50px 500px 0px 500px;
+    margin: 40px 500px 0px 500px;
     border-bottom-left-radius: 50px;
     border-bottom-right-radius: 50px;
     border-color: rgba(95, 212, 248, 0.781);
@@ -35,6 +35,10 @@ h2{
     font-weight: lighter;
     font-size: 32px;
 }
+li{
+    font-family: "CustomFont", sans-serif;
+    font-weight: 800;
+}
 @font-face{
     font-family: "CustomFont";
     src: url("squareo-webfont.eot"),
@@ -55,6 +59,7 @@ h2{
     grid-row-gap: 20px;*/
     margin: 20px 100px 20px 100px;
     padding: 10px;
+    height: 600px;
 }
 .image-div{
     width: 0;
@@ -75,6 +80,7 @@ h2{
 }
 .body{
     margin: 0 0 0 450px;
+    padding: 10px;
 }
 @media only screen and (max-width: 1000px){
     .body{
@@ -118,22 +124,42 @@ footer{
 }
 .links{
     margin: 20px 0 0 100px;
-    width: 100px;
 }
 .links :nth-child(n){
-    margin: 10px 0 0 0;
+    margin: 30px 0 0 20px;
 }
 .facebook{
-    display: inline-flex;
-    height: 36px;
-    width: 36px;
+    display: inline-block;
+    height: 62px;
+    width: 62px;
 }
 .instagram{
-    display: inline-flex;
-    height: 36px;
-    width: 36px;
+    display: inline-block;
+    height: 62px;
+    width: 62px;
 }
-#soc-names{
-    display: inline-flex;
-    margin: 0 0 0 50px;
-}
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 350px;
+    height: 350px;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: 230px;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  .gallery-image{
+      height: auto;
+      width: auto;
+  }
